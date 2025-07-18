@@ -23,6 +23,12 @@ jobs:
       - name: Install dependencies
         run: npm install
       
+      - name: Create config file
+        run: |
+          echo "// Placeholder config for build" > config.js
+          echo "export const GEMINI_API_KEY = 'placeholder';" >> config.js
+          echo "export const AZURE_CLIENT_ID = 'placeholder';" >> config.js
+      
       - name: Build the Vite app
         run: npm run build
       
@@ -31,3 +37,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+          force: true
