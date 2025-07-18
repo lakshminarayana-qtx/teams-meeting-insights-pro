@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "2.0.0",
+  "id": "com.yourcompany.teamsinsightspro",
+  "packageName": "com.yourcompany.teamsinsightspro",
+  "developer": {
+    "name": "Your Company",
+    "websiteUrl": "https://yourcompany.com",
+    "privacyUrl": "https://yourcompany.com/privacy",
+    "termsOfUseUrl": "https://yourcompany.com/terms"
+  },
+  "name": {
+    "short": "Meeting Insights Pro",
+    "full": "Teams Meeting Insights Pro - AI-Powered Analysis"
+  },
+  "description": {
+    "short": "AI-powered meeting analysis with automatic transcript processing",
+    "full": "Automatically fetch Teams meeting transcripts and generate comprehensive insights, minutes, action items, and summaries using Google Gemini AI."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#6264A7",
+  "staticTabs": [{
+    "entityId": "insightsProTab",
+    "name": "Meeting Insights Pro",
+    "contentUrl": "https://YOUR-USERNAME.github.io/teams-meeting-insights-pro/",
+    "websiteUrl": "https://YOUR-USERNAME.github.io/teams-meeting-insights-pro/",
+    "scopes": ["personal"]
+  }],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["YOUR-USERNAME.github.io", "login.microsoftonline.com"],
+  "webApplicationInfo": {
+    "id": "YOUR_AZURE_APP_ID",
+    "resource": "https://graph.microsoft.com"
+  }
+}
